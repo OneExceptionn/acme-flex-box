@@ -1,0 +1,120 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:blue;
+    opacity: 80%;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header > p {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+nav {
+    flex: 3;  
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    margin: 10px;
+}
+
+#createuser {
+    border: solid black;
+    border-radius: 10px;
+    border-width: 1px;
+    margin: auto;
+    width: 40%;
+}
+
+#createuser h2 {
+    margin-bottom: auto;
+}
+
+#fields {
+    display: flex;
+}
+
+#fields #category {
+    flex: 1;
+    margin: 10px;
+}
+
+#fields #inputs {
+    margin: 10px;
+    flex: 3;
+}
+
+#inputs input {
+    width: 100%
+}
+#inputs select {
+    width: 100%
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.users div {
+    border: black solid;
+    border-radius: 1rem;
+    border-width: 1px;
+    margin: 1rem;
+    width: 30%;
+    text-align: center;
+}
+
+.users div :first-child {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #header {
+        display: block;
+    }
+    nav {
+        display: block;
+        margin: 10px;
+    }
+    #createuser {
+        width: 100%
+    }
+    #buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #buttons button {
+        width: 95%;
+    }
+    #buttons :first-child {
+        background-color: white;
+        border-width: 0;
+    }
+    #buttons :nth-child(2) {
+        background-color: blue;
+        color: white;
+        border: black solid;
+        border-width: 1px;
+        opacity: 70%;
+    }
+
+    .users div {
+        width: 100%;
+    }
+}
